@@ -2,14 +2,12 @@
   "name": "trello-tools",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://Muzzamil75.github.io/Trello-Reporting-Apis",
   "dependencies": {
     "@babel/core": "7.8.4",
     "@date-io/date-fns": "latest",
     "@date-io/moment": "1.1.0",
     "@material-ui/core": "latest",
-    "date-fns": "next",
-    "material-ui-pickers": "latest",
-    "moment": "2.24.0",
     "@svgr/webpack": "4.3.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -25,6 +23,7 @@
     "camelcase": "^5.3.1",
     "case-sensitive-paths-webpack-plugin": "2.3.0",
     "css-loader": "3.4.2",
+    "date-fns": "next",
     "dotenv": "8.2.0",
     "dotenv-expand": "5.1.0",
     "eslint": "^6.6.0",
@@ -37,6 +36,7 @@
     "eslint-plugin-react-hooks": "^1.6.1",
     "file-loader": "4.3.0",
     "fs-extra": "^8.1.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "4.0.0-beta.11",
     "identity-obj-proxy": "3.0.0",
     "jest": "24.9.0",
@@ -44,7 +44,9 @@
     "jest-resolve": "24.9.0",
     "jest-watch-typeahead": "0.4.2",
     "less": "^3.11.1",
+    "material-ui-pickers": "latest",
     "mini-css-extract-plugin": "0.9.0",
+    "moment": "2.24.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "pnp-webpack-plugin": "1.6.0",
     "postcss-flexbugs-fixes": "4.1.0",
@@ -79,7 +81,9 @@
     "watch-css": "npm run build-css && less-watch-compiler --main-file=index.less src/less/ src/less/",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
