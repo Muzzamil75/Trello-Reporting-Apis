@@ -134,7 +134,7 @@ class Reporting extends Component {
     let actions = [...this.state.allActions];
     let filteredActions = [];
     console.log('actionsss', actions)
-    this.setState({ memberName: actions[0].memberCreator.username, boardName: actions[0].data.board.name })
+    this.setState({ memberName: actions[0]?.memberCreator?.username, boardName: actions[0]?.data?.board?.name })
 
     // making a specific array of objects from the ALLactions array
     actions.forEach(ele => {

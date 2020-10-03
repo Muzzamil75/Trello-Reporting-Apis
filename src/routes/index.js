@@ -10,9 +10,10 @@ const Routes = () => {
     <BrowserRouter>
       <Switch>
         <Route exact path='/' component={Login} />
-        <Route exact path='/dashboard' component={Dashboard} />
-        <Route path='/reports' component={Reporting} />
-        {/* <ProtectedRoute exact path='/dashboard' component={Dashboard} /> */}
+        {/* <Route exact path='/dashboard' component={Dashboard} /> */}
+        {/* <Route path='/reports' component={Reporting} /> */}
+        <ProtectedRoute exact path='/dashboard' component={Dashboard} />
+        <ProtectedRoute exact path='/reports' component={Reporting} />
         <Route path="*" component={() => '405 error found'} />
       </Switch>
     </BrowserRouter>

@@ -198,7 +198,7 @@ export default class Dashboard extends Component {
                             </div>
                         </div>
                         <a className="navbar-brand" href="index.html">
-                            Crewlogix
+                            Muzzamil's
                       <span>v.1.4</span>
                         </a>
                     </div>

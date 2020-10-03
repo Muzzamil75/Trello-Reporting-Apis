@@ -2,7 +2,7 @@
   "name": "trello-tools",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Muzzamil75.github.io/Trello-Reporting-Apis",
+  "homepage": "http://Muzzamil75.github.io/Trello-Reporting-Apis/",
   "dependencies": {
     "@babel/core": "7.8.4",
     "@date-io/date-fns": "latest",
